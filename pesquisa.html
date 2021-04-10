@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/united/bootstrap.min.css">
+  <title>Cadastro de Vinhos</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Controle Pessoal de Vinhos</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inclusão</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="consulta.html">Consulta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pesquisa.html">Pesquisa</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row mt-2">
+      <div class="col-sm-3">
+        <img src="taca_vinhos.jpg" alt="Taça de Vinhos" style="max-width: 100%;">
+      </div>
+      <div class="col-sm-9">
+        <h4 class="text-dark mt-1">Pesquisa de Vinhos</h4>
+
+        <form id="formPalavra">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Por Palavra-Chave: </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Marca ou tipo do vinho">
+            <div class="input-group-append">
+              <button class="btn btn-dark" type="submit">Pesquisar</button>
+            </div>
+          </div>
+        </form>
+
+        <form id="formPreco">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Por Preço: </span>
+            </div>
+            <input type="number" class="form-control" placeholder="R$ Mínimo">
+            <input type="number" class="form-control" placeholder="R$ Máximo (opcional)">
+            <div class="input-group-append">
+              <button class="btn btn-dark" type="submit">Pesquisar</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
