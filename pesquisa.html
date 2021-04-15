@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/united/bootstrap.min.css">
   <title>Cadastro de Vinhos</title>
 </head>
@@ -24,6 +25,9 @@
         <li class="nav-item">
           <a class="nav-link" href="pesquisa.html">Pesquisa</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="controle.html">Controle</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -41,7 +45,11 @@
             <div class="input-group-prepend">
               <span class="input-group-text">Por Palavra-Chave: </span>
             </div>
-            <input type="text" class="form-control" placeholder="Marca ou tipo do vinho">
+            <input type="text" class="form-control" 
+                   name="palavra" 
+                   placeholder="Marca ou tipo do vinho"
+                   minlength="3"
+                   required>
             <div class="input-group-append">
               <button class="btn btn-dark" type="submit">Pesquisar</button>
             </div>
@@ -53,18 +61,25 @@
             <div class="input-group-prepend">
               <span class="input-group-text">Por Preço: </span>
             </div>
-            <input type="number" class="form-control" placeholder="R$ Mínimo">
-            <input type="number" class="form-control" placeholder="R$ Máximo (opcional)">
+            <input type="number" class="form-control" 
+                   placeholder="R$ Mínimo"
+                   name="prMinimo"
+                   required>
+            <input type="number" class="form-control" 
+                   placeholder="R$ Máximo (opcional)"
+                   name="prMaximo">
             <div class="input-group-append">
               <button class="btn btn-dark" type="submit">Pesquisar</button>
             </div>
           </div>
         </form>
+        <div id="resposta"></div>
 
       </div>
     </div>
   </div>
 
+  <script src="pesquisa.js"></script>
 </body>
 
 </html>

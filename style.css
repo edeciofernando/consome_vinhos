@@ -6,3 +6,13 @@
 .fas {
   cursor: pointer;
 }
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.img-card {
+  width: 105px;
+  height: 120px;
+}
